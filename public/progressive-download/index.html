@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Progressive Download Test</title>
+</head>
+
+<body>
+  <video id="videoPlayer" controls>
+    <source src="http://localhost:8080/progressive-download/big_video.mp4" type="video/mp4">
+  </video>
+
+  <script>
+    const video = document.getElementById('videoPlayer');
+    video.addEventListener('canplaythrough', () => {
+      video.play();
+    });
+  </script>
+</body>
+
+</html>
